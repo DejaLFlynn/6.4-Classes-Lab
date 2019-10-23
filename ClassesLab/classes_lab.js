@@ -61,7 +61,7 @@ class Dog{
         
     }
 }
-console.log('3a-d')
+
 let benji = new Dog('Benji', 'husky', 'tired', false)
 console.log(benji)
 console.log(benji.playFetch())
@@ -112,19 +112,19 @@ function Movie(name, year, genre, cast, description) {
     this.cast = cast;
     this.description = description;
   }
-//   let movie1 = new Movie('Coming to America', '1984', 'comedy', 'Eddie and Arsenio', 'funny AF!');
-// let movie2 = new Movie('Harlem Knights', '1986', 'comedy', 'Eddie and Richard', 'super funny!');
-// Movie.prototype.blurb = function () {
-//   console.log(`${this.name} came out ${this.year} it was a ${this.genre} starring ${this.cast}
-//      and it was ${this.description}`);
-// };
+  let movie1 = new Movie('Coming to America', 1984, 'comedy', 'Eddie and Arsenio', 'funny AF!');
+let movie2 = new Movie('Harlem Knights', 1986, 'comedy', 'Eddie and Richard', 'super funny!');
+Movie.prototype.blurb = function () {
+  console.log(`${this.name} came out ${this.year} it was a ${this.genre} starring ${this.cast}
+     and it was ${this.description}`);
+};
 
-// movie1.blurb();
-// movie2.blurb();
+movie1.blurb();
+movie2.blurb();
 
-// ## Question 6
-console.log("---------- #6 ----------")
-console.log("A)")
+
+console.log("///////question 6 ////////")
+console.log("A")
 
 function Vector(x, y) {
   this.x = x;
@@ -138,6 +138,5 @@ Vector.prototype.plus = function (v) {
   return this.x + this.x && this.y + this.y
 }
 
-console.log(v1.plus(v2))
 
-console.log(" ")
+console.log(v1.plus(v2))
